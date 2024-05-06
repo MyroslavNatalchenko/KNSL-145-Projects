@@ -90,4 +90,8 @@ for (BankAccountOperation operation : operationes.values()) {
             }
         }
 
+Scanner myObj = new Scanner(System.in);
+int n;
+n=myObj.nextInt();
+
 
