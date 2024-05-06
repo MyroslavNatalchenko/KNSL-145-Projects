@@ -1,0 +1,93 @@
+POJ
+----------PĘTLE---------
+for [each]
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+[each]
+for (type variableName : arrayName) {
+  // code block to be executed
+}
+ 
+while
+while (condition) {
+  // code block to be executed
+}
+----------WARUNKI----------
+if/else
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+switch case
+
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+----------DEFINICJE KLASY----------
+Static и not-static
+Объяснение -  https://javarush.com/groups/posts/modifikator-static-java
+
+----------STRING----------
+String str = "example";
+String upperCase = str.toUpperCase(); // zamienia na wielkie litery
+String lowerCase = str.toLowerCase(); // zamienia на маленькие litery
+String str1 = "example";
+String str2 = "ex";
+boolean contains = str1.contains(str2); // sprawdza, czy str1 zawiera str2
+char ch = str.charAt(2); // wyciąga znak na podanym indeksie (licząc od 0)
+
+String str = "example1-example2-example3";
+String[] parts = str.split("-"); // dzieli ciąg na części po określonym znaku
+
+String replaced = str.replace('e', 'a'); // zamienia określony znak na inny
+
+----------LocalDate----------
+LocalDate date = LocalDate.of(2024, 5, 3); // definiuje datę
+LocalTime time = LocalTime.of(14, 30, 0); // definiuje czas
+LocalDateTime dateTime = LocalDateTime.of(date, time); // łączy datę i czas
+
+LocalDate date1 = LocalDate.of(2024, 5, 3);
+LocalDate date2 = LocalDate.of(2024, 5, 4);
+boolean isAfter = date1.isAfter(date2); // sprawdza, czy date1 jest po date2
+boolean isBefore = date1.isBefore(date2); // sprawdza, czy date1 jest przed date2
+boolean isEqual = date1.isEqual(date2); // sprawdza, czy date1 jest równa date2
+
+LocalDate now = LocalDate.now(); // otrzymuje bieżącą datę
+LocalTime nowTime = LocalTime.now(); // otrzymuje bieżący czas
+LocalDateTime nowDateTime = LocalDateTime.now(); // otrzymuje bieżącą datę i czas
+
+LocalDate shiftedDate = date.plusDays(7); // przesuwa datę o 7 dni
+LocalDateTime dateTime = LocalDateTime.now();
+LocalDateTime shiftedDateTime = dateTime.minusHours(3); // przesuwa czas o 3 godziny wstecz
+
+----------HashMap----------
+HashMap<Integer, String> map = new HashMap<>(); // tworzy pustą HashMapę
+map.put(1, "wartość1"); // dodaje element do mapy z określonym kluczem
+map.put(2, "wartość2");
+
+map.remove(1); // usuwa element z mapy po kluczu
+map.put(3, "wartość3"); // dodaje nowy element
+
+for (Integer key : map.keySet()) { // iteruje po wszystkich kluczach
+  // code block to be executed
+}
+
+for (BankAccountOperation operation : operationes.values()) {
+            if (operation.getOperationType() == BankOperationType.WITHDRAWAL) {
+                BankAccount account = operation.getsourceBankAccount();
+                double money = operation.getMoney();
+                account.money -= money;
+            }
+        }
+
+
